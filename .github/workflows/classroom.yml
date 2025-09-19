@@ -27,7 +27,7 @@ jobs:
         # Download the latest test files from the upstream repository
         # This ensures students always run against the latest tests
         curl -o .github/tests/test_assignment.py \
-          https://raw.githubusercontent.com/UCSF-DataSci/ds217_25f_hw1/main/.github/tests/test_assignment.py || true
+          https://raw.githubusercontent.com/UCSF-DataSci/ds217_25f_hw1/main/refs/heads/.github/tests/test_assignment.py || true
 
         # If download fails, use the local version
         if [ ! -f .github/tests/test_assignment.py ]; then
